@@ -17,7 +17,7 @@ for i in range(num_points):
         vectors_set.append([np.random.normal(3.0,0.5),
                             np.random.normal(1.0,0.5)])
 
-# Print Data
+# Draw Graph
 df = pd.DataFrame({"x": [v[0] for v in vectors_set],
                     "y": [v[1] for v in vectors_set]})
 sns.lmplot("x","y", data=df, fit_reg=False, size=6)
